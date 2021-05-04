@@ -1,0 +1,218 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Movie Review Page</a>
+   
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li><a href="#"><i class="material-icons">view_module</i></a></li>
+       <li> When You Entered This Page PLease Refresh This Page After Check</li>
+        <li><a href="http://localhost:4200/Review"><i class="material-icons">refresh</i></a></li>
+        <li><a href="#"><i class="material-icons">more_vert</i></a></li>
+      </ul>
+    </div>
+  </nav><br>
+
+  <div class="container" >
+             <div class="row" > 
+                 
+      <div class="row" style="margin-left: 250px;">
+          <div class="col-sm-4">
+              <div class="rating-block">
+                  <h4>Average user rating</h4>
+                  <h2 class="bold padding-bottom-7">{{ReviewDetail.MovieRating}}<small>/ 5</small></h2>
+                  <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+                  <button type="button" class="btn btn-default btn-grey btn-sm" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                  </button>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <h4>Rating breakdown</h4>
+              <div class="pull-left">
+                  <div class="pull-left" style="width:35px; line-height:1;">
+                      <div style="height:9px; margin:5px 0;">5 <span class="glyphicon glyphicon-star"></span></div>
+                  </div>
+                  <div class="pull-left" style="width:180px;">
+                      <div class="progress" style="height:9px; margin:8px 0;">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 1000%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="pull-right" style="margin-left:10px;">1</div>
+              </div>
+              <div class="pull-left">
+                  <div class="pull-left" style="width:35px; line-height:1;">
+                      <div style="height:9px; margin:5px 0;">4 <span class="glyphicon glyphicon-star"></span></div>
+                  </div>
+                  <div class="pull-left" style="width:180px;">
+                      <div class="progress" style="height:9px; margin:8px 0;">
+                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="pull-right" style="margin-left:10px;">1</div>
+              </div>
+              <div class="pull-left">
+                  <div class="pull-left" style="width:35px; line-height:1;">
+                      <div style="height:9px; margin:5px 0;">3 <span class="glyphicon glyphicon-star"></span></div>
+                  </div>
+                  <div class="pull-left" style="width:180px;">
+                      <div class="progress" style="height:9px; margin:8px 0;">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="pull-right" style="margin-left:10px;">0</div>
+              </div>
+              <div class="pull-left">
+                  <div class="pull-left" style="width:35px; line-height:1;">
+                      <div style="height:9px; margin:5px 0;">2 <span class="glyphicon glyphicon-star"></span></div>
+                  </div>
+                  <div class="pull-left" style="width:180px;">
+                      <div class="progress" style="height:9px; margin:8px 0;">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="pull-right" style="margin-left:10px;">0</div>
+              </div>
+              <div class="pull-left">
+                  <div class="pull-left" style="width:35px; line-height:1;">
+                      <div style="height:9px; margin:5px 0;">1 <span class="glyphicon glyphicon-star"></span></div>
+                  </div>
+                  <div class="pull-left" style="width:180px;">
+                      <div class="progress" style="height:9px; margin:8px 0;">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
+                          <span class="sr-only">80% Complete (danger)</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="pull-right" style="margin-left:10px;">0</div>
+              </div>
+          </div>			
+      </div>	
+      <div class="col-md-12">
+    	<div class="well well-sm">
+            <div class="text-right">
+                <button class="btn btn-success btn-green" id="open-review-box"> Open Review Form</button>
+                <!-- <a  href="http://localhost:4200/Review" >Leave a Review</a> -->
+            </div>
+        
+            <div class="row" id="post-review-box" style="display:none; " >
+                <div class="col-md-12">
+                    [3:21 PM, 5/2/2021] Aravind: 
+                    <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group" [class.has.error]="Username.invalid && Username.touched">
+                                    <label for="name">
+                                       Your  Name:</label>
+                                    <input type="text" class="form-control" #Username="ngModel" id="Username" name="Username" placeholder="Enter name" required="required" [(ngModel)]="ReviewDetail.Username" />
+                                </div>
+                                <div class="form-group" [class.has.error]="MoviewRating.invalid && MoviewRating.touched">
+                                    <label for="text">
+                                        Movie Rating:</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"  #MoviewRating="ngModel" id="MoviewRating" name="MoviewRating" placeholder="Enter Rating" required="required" [(ngModel)]="ReviewDetail.MovieRating"/></div>
+                                </div>
+                                <div class="form-group" [class.has.error]="Feedback.invalid && Feedback.touched">
+                                    <label for="subject">
+                                          Movie Name</label>
+                                    <select id="subject" name="MoviewReviewName" #MoviewReviewName="ngModel" class="form-control" required="required" [(ngModel)]="ReviewDetail.MoviewReviewName">
+                                        <option value="na" selected="">Select Movie:</option>
+                                        <option value="30 Days Love">30 Days Love</option>
+                                        <option value="Alludu Adurs">Alludu Adurs</option>
+                                        <option value="Aranya">Aranya</option>
+                                        <option value="Darbar">Darbar</option>
+                                        <option value="GaaliSampath">GaaliSampath</option>
+                                        <option value="Love-Story">Love-Story</option>
+                                        <option value="Master">Master</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Shashi">Shashi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group" [class.has.error]="Feedback.invalid && Feedback.touched">
+                                    <label for="name">
+                                        Feedback</label>
+                                    <textarea name="Feedback" id="Feedback" #Feedback="ngModel" class="form-control" rows="9" cols="25" required="required" [(ngModel)]="ReviewDetail.Feedback"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group" [class.has.error]="MovieId.invalid && MovieId.touched">
+                                    <label for="text">
+                                        Movie Id:</label>
+                                    <div class="input-group">
+                                      <span style="color: red;">*</span>
+                                        <input type="text" class="form-control" id="MovieId" name="MovieId" #MovieId="ngModel" placeholder="Enter Id" required="required" [(ngModel)]="ReviewDetail.MovieId"/></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" (click)="show()">
+                                    Send</button>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div> 
+         
+		</div>		
+      
+      <div class="row">
+
+          <div class="col-sm-12">
+              <hr/>
+              <div class="review-block">
+                  <div class="row" *ngIf="showing">
+                      <div class="col-sm-3">
+                          <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
+                          <div class="review-block-name"><a href="#">{{ReviewDetail.Username}}</a></div>
+                          <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                      </div>
+                      <div class="col-sm-9">
+                          <div class="review-block-rate">
+                              <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              </button>
+                              <button type="button" class="btn btn-default btn-grey btn-xs" aria-label="Left Align">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                          <div class="review-block-title">{{ReviewDetail.MovieRating}}</div>
+                          <div class="review-block-description">MovieName: {{ReviewDetail.MovieId}}&nbsp;{{ReviewDetail.MoviewReviewName}} <br>{{ReviewDetail.Feedback}}</div>
+                      </div>
+                  </div>
+                  <hr/>
+              </div>
+          </div>
+      </div>
+    </div>
+      
+  </div> <!-- /container -->
